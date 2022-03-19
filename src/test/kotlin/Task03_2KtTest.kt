@@ -7,7 +7,7 @@ class Task03_2KtTest{
     @Test
     fun test_pay_Visa_Sum100_amount_400() {
         // arrange
-        val amount = 400_00
+        val amount = 401_00
         val sum = 100_00
         val type = VISA
         val expectedValue = "С суммы 400 руб. 00 коп., будет взята комиссия 35 руб. 00 коп."
@@ -15,7 +15,6 @@ class Task03_2KtTest{
         val actualValue = pay(amount,sum,type)
         //assert
         assertEquals(expectedValue,actualValue)
-
     }
 
     @Test
